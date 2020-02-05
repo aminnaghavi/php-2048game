@@ -1,0 +1,43 @@
+use a2480859_usr2048;
+create table new_users(
+nickname varchar(16) not null primary key,
+email varchar(50) not null,
+password char(40) not null,
+date date not null,
+activition_code int unsigned not null,
+index(nickname)
+);
+create table users(
+nickname varchar(50) not null primary key,
+email varchar(50) not null,
+password char(40) not null,
+date date not null,
+index(nickname)
+);
+create table savedgames(
+nickname varchar(50) not null,
+number smallint unsigned,
+BestScore int unsigned default 0,
+rnd varchar(106),
+t11 smallint unsigned default 0,
+t12 smallint unsigned default 0,
+t13 smallint unsigned default 0,
+t14 smallint unsigned default 0,
+t21 smallint unsigned default 0,
+t22 smallint unsigned default 0,
+t23 smallint unsigned default 0,
+t24 smallint unsigned default 0,
+t31 smallint unsigned default 0,
+t32 smallint unsigned default 0,
+t33 smallint unsigned default 0,
+t34 smallint unsigned default 0,
+t41 smallint unsigned default 0,
+t42 smallint unsigned default 0,
+t43 smallint unsigned default 0,
+t44 smallint unsigned default 0,
+primary key(nickname,number),
+index (nickname,number)
+);
+grant insert,select
+on a2480859_usr2048.*
+to a2480859_usr2048 identified by 'bw113733';

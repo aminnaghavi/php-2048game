@@ -1,0 +1,26 @@
+body{
+	height:100%;
+	padding:0;
+	margin:0;
+	background:url(2048game.png) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	background-size: cover;"
+}
+.form_table
+{
+	background-color:rgba(255,87,0,0.5);
+	border-radius:10%;
+}
+button
+{
+	border-radius:10%;
+}
+img
+{
+	border-radius:10%;
+}
+input
+{
+	border-radius:10%;
+}
